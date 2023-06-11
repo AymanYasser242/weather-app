@@ -1,34 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 *{
     font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
     
 body{
  margin: 0;
 }
 main{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?lanscape');
+    background-image: url('https://source.unsplash.com/1600x900/?lanscape'); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #title{
 display: flex;
-align-items: flex-end;
+align-items: center;
 justify-content: center;
 height:10vh ;
 width:100%;
 }
 #card{
-color:white;
-padding: 1em;
-border-radius: 50px;
-box-shadow: 0 10px 25px rgba(107, 107, 102, 0.8);
-width:40%;
-height: 50vh;
-transition: .5s ease;
-background : linear-gradient( #0f0c29 , #302b63 );
+height: auto;
+width: 600px;
+background: rgba(165, 165, 165, 0.3);
+border-radius: 25px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+border: 1px solid rgba(165, 165, 165, 0.3);
+transition: 0.7s ease;
 }
 #card:hover{
     transform: scale(1.1);
@@ -37,6 +43,7 @@ background : linear-gradient( #0f0c29 , #302b63 );
 #search{
     padding: 1em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color:white
@@ -45,10 +52,11 @@ background : linear-gradient( #0f0c29 , #302b63 );
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 button{
-    width: 25%;
-    height: 6vh;
+    width: 140px;
+    height: 5vh;
     border-radius: 50px;
     transition: 0.5s ease;
 }
@@ -65,7 +73,8 @@ button:hover{
 input{
     font-weight: bold;
     border-radius: 50px;
-    height: 2.6em;
+    border: 1px solid rgba(99, 99, 99, 0.836);
+    height: 40px;
     width :40%;
     text-align: center;
 }
