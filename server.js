@@ -38,7 +38,8 @@ newData={
 city:req.body.city,
 temp:req.body.temp,
 date:req.body.date,
-content:req.body.content
+content:req.body.content,
+icon:req.body.icon
 };
 projectData=newData;
 };

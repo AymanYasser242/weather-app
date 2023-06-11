@@ -33,7 +33,7 @@ function perform(){
     getWeather(baseUrl,currentLocation,apiKey)
     .then(function(data){
     //TODO: sending weather data to the local server.     
-        transData('/add',{date:newDate, city:data.name ,temp:data.main.temp , content:feeling});
+        transData('/add',{date:newDate, city:data.name ,temp:data.main.temp , content:feeling , icon:data.weather[0].icon});
     //calling the function to update UI.    
     }).then(function() {
       updateUI()
@@ -79,7 +79,7 @@ const allData = await request.json();
 document.getElementById('date').innerHTML=`Date : ${allData.date}`;
 document.getElementById('temp').innerHTML=`Temperature : ${(allData.temp)} C°`
 document.getElementById('content').innerHTML=`Feeling : ${allData.content}`
-document.getElementById('city').innerHTML=`<h1>${allData.city} <i class="fa-solid fa-earth-americas"></i></h1>`
+document.getElementById('city').innerHTML=`<h1>${allData.city} <img src="http://openweathermap.org/img/w/${allData.icon}.png" alt="icon"></h1>`
 }
 catch(error){
     console.log("error",error);
