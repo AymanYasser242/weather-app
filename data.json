@@ -1,0 +1,13 @@
+{"coord":{"lon":31.5089,"lat":30.5999},
+"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],
+"base":"stations",
+"main":{"temp":26.15,"feels_like":26.15,"temp_min":26.15,"temp_max":26.15,"pressure":1009,"humidity":40,"sea_level":1009,"grnd_level":1008},
+"visibility":10000,
+"wind":{"speed":4.07,"deg":4,"gust":6.69},
+"clouds":{"all":22},"dt":1686505445,
+"sys":{"country":"EG","sunrise":1686451857,"sunset":1686502577},
+"timezone":10800,
+"id":359493,
+"name":"Zagazig",
+"cod":200
+}

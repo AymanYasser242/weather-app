@@ -19,6 +19,7 @@ main{
     background-size: cover;
 }
 #title{
+color :white;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -67,7 +68,7 @@ button:hover{
 #input{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 input{
@@ -77,4 +78,9 @@ input{
     height: 40px;
     width :40%;
     text-align: center;
+}
+#weather{
+margin-left: 30px;
+margin-bottom: 30px;
+color: white;
 }
