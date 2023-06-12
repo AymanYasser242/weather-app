@@ -15,7 +15,7 @@
     justify-content: center;
     background-image: url('https://source.unsplash.com/1600x900/?lanscape');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 #title{
 width: 100%;
@@ -35,8 +35,7 @@ height: 60px ;
     border: 1px solid rgba(165, 165, 165, 0.3);
     transition: 0.7s ease;}
 #card:hover{
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }  
 #search{
     padding: 15px;
@@ -76,8 +75,21 @@ input{
     text-align: center;
     color: white;
 }
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
 #weather{
 margin-left: 30px;
 margin-bottom: 30px;
 color: white;
+}
+@media (max-width: 767px) {
+    #card {
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+    }
 }

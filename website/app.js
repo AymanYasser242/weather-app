@@ -77,11 +77,12 @@ const request = await fetch('/all');
 try{
 const allData = await request.json();
 document.getElementById('date').innerHTML=`Date : ${allData.date}`;
-document.getElementById('temp').innerHTML=`Temperature : ${(allData.temp)} C°`
+document.getElementById('temp').innerHTML=`Temperature : ${(Math.round(allData.temp))} C°`
 document.getElementById('content').innerHTML=`Feeling : ${allData.content}`
 document.getElementById('city').innerHTML=`<h1>${allData.city} <img src="http://openweathermap.org/img/w/${allData.icon}.png" alt="icon"></h1>`
 }
 catch(error){
     console.log("error",error);
+    
 }
 };
