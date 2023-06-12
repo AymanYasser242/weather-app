@@ -33,7 +33,6 @@ projectData={};
 //TODO: add the data recived to projectData object.
 app.post('/add',addData)
 function addData(req,res){
-console.log(req.body);
 newData={
 city:req.body.city,
 temp:req.body.temp,
